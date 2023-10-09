@@ -8,10 +8,10 @@
 		// Configure the gpio pin controller
 		target = <&gpio>;
 		__overlay__ {
-			led_pin: led_pins@Fill me! {
-				brcm,pins = <Fill me!>; // gpio number
-				brcm,function = <Fill me!>; // 0 = input, 1 = output
-				brcm,pull = <Fill me!>; // 0 = none, 1 = pull down, 2 = pull up
+			led_pin: led_pins@XXX {
+				brcm,pins = <XXX>; // gpio number
+				brcm,function = <XXX>; // 0 = input, 1 = output
+				brcm,pull = <XXX>; // 0 = none, 1 = pull down, 2 = pull up
 			};
 		};
 	};
@@ -22,7 +22,7 @@
 				compatible = "gpio-leds";
 				pinctrl-names = "default";
 				pinctrl-0 = <&led_pin>;
-				status = "";
+				status = "XXX";
 
 				led: led {
 			                label = "XXX";

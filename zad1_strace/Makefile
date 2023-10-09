@@ -1,4 +1,4 @@
-BIN=sigint memtest correct_memtest
+BIN=sigint
 
 CC=gcc
 CCOPTS=-Wall -Wextra -g
