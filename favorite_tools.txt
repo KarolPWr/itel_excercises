@@ -1,0 +1,13 @@
+fd
+$ sudo apt install fd-find
+
+rg
+$ sudo apt-get install ripgrep
+
+ranger
+$ sudo apt-get update sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
+
+terminator
+$ sudo apt-get install terminator
+
+ctrl+a, ctrl+e, ctrl+w
