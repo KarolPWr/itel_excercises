@@ -8,7 +8,7 @@
 		// Configure the gpio pin controller
 		target = <&gpio>;
 		__overlay__ {
-			led_pin: led_pins@XXX {
+			led_pin: led_pins@XXX {  //XXX-gpio number
 				brcm,pins = <XXX>; // gpio number
 				brcm,function = <XXX>; // 0 = input, 1 = output
 				brcm,pull = <XXX>; // 0 = none, 1 = pull down, 2 = pull up
