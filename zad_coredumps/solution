@@ -1,0 +1,11 @@
+W define jest zaalokowane zbyt mała ilosć pamięci:
+
+#define MEMORY_SIZE 100  // in bytes
+
+przez co program się crashuje. 
+
+Debugowanie:
+
+gdb memtest core 
+
+Pokaże miejsce w kodzie gdzie funkcja przestaje działać. 

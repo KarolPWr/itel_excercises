@@ -1,0 +1,25 @@
+Odpalamy aplikację w terminalu:
+
+./sigint
+
+W drugim terminalu:
+
+kill -s SIGINT $(pidof sigint)
+
+Program w pierwszym terminalu się zcrashuje bez wypisania stringa. 
+
+Debugowanie:
+
+strace ./sigint i powtarzamy wysyłanie sygnału z drugiego terminala
+
+W strace zobaczymy następujący output:
+...
+--- SIGINT {si_signo=SIGINT, si_code=SI_USER, si_pid=1288541, si_uid=1001} ---
+write(4, "Ahhh! SIGINT!\n", 14)         = -1 EBADF (Bad file descriptor)
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+...
+
+W kodzie użyty jest zły file deskryptor. Należy zamienić
+write(4, "Ahhh! SIGINT!\n", 14);
+na
+write(1, "Ahhh! SIGINT!\n", 14);

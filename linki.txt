@@ -1,0 +1,11 @@
+# Tutorial do IRQ w kernelu
+
+https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/configuration/device-tree.adoc#the-dtoverlay-command
+
+# Więcej o IRQ w kerlenu:
+https://stackoverflow.com/a/34377549/9226644 
+
+# Komendta $ dtoverlay i dokumentacja do devicetree
+
+https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/configuration/device-tree.adoc#the-dtoverlay-command
+
